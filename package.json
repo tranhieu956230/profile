@@ -1,0 +1,13 @@
+{
+  "name": "jackson-color-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "live-server": "live-server --port=8089",
+    "watch:sass": "node-sass sass/main.scss css/style.css --watch",
+    "dev": "npm-run-all --parallel live-server watch:sass"
+  },
+  "author": "",
+  "license": "ISC"
+}

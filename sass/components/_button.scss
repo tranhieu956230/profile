@@ -1,0 +1,40 @@
+.button-link {
+    display: inline-block;
+    padding: 1.3rem 1.5rem;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-weight: 300;
+    text-transform: uppercase;
+    outline: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover &__link {
+
+        &:link,
+        &:visited,
+        &:active {
+            color: $color-link;
+        }
+    }
+
+    &__link {
+
+        &:link,
+        &:visited,
+        &:active {
+            text-decoration: none;
+            border-bottom: none;
+            color: $color-text-dark;
+            transition: color .3s;
+        }
+
+
+
+    }
+}

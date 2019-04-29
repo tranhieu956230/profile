@@ -1,0 +1,55 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    flex-basis: 25%;
+    padding: 5rem 0;
+    background-color: $color-sidebar;
+    font-size: 1.6rem;
+}
+
+.figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__profile-image {
+        background-image: url("/img/about.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+    }
+
+    &__name {
+        font-family: "Playfair Display", Georgia, serif;
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.7);
+        line-height: 1.8;
+        letter-spacing: 1px;
+    }
+
+    a:link,
+    a:active,
+    a:visited {
+        text-decoration: none;
+        color: $color-link;
+    }
+
+    margin-bottom: 2rem;
+}

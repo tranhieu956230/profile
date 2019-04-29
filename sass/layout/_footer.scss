@@ -1,0 +1,19 @@
+.footer {
+    font-size: 1.3rem;
+    display: block;
+    font-weight: 400;
+    padding: 1.75rem;
+    color: $color-text-light;
+    text-align: center;
+    line-height: 1.5;
+
+    a {
+
+        &:link,
+        &:active,
+        &:visited {
+            text-decoration: none;
+            color: $color-link;
+        }
+    }
+}
