@@ -36,6 +36,19 @@ html {
 .margin-bottom-huge {
   margin-bottom: 8rem; }
 
+.section-title {
+  text-transform: uppercase; }
+  .section-title--main {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.4);
+    letter-spacing: 5px;
+    font-weight: 500; }
+  .section-title--sub {
+    font-size: 3rem;
+    color: black;
+    letter-spacing: .5rem;
+    font-family: "Playfair Display", Georgia, serif; }
+
 .navigation {
   text-transform: uppercase;
   font-size: 1.5rem; }
@@ -138,7 +151,7 @@ html {
     width: calc((100% - var(--gutter) * (var(--n) - 1)) / var(--n));
     padding: 2rem 2.5rem;
     box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.1);
-    margin-bottom: calc(var(--gutter) * 2);
+    margin-bottom: calc(var(--gutter) * 3);
     text-align: center;
     border-bottom: 2px solid currentColor;
     position: relative; }
@@ -185,6 +198,42 @@ html {
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.progress {
+  width: 100%;
+  height: .6rem;
+  border-radius: .5rem;
+  background-color: #F2F3F7;
+  position: relative; }
+  .progress::after {
+    content: "";
+    background-color: var(--data-color);
+    display: inline-block;
+    border-radius: .5rem;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--data-percentage);
+    height: 100%; }
+  .progress::before {
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--data-color);
+    position: absolute;
+    top: 50%;
+    left: var(--data-percentage);
+    border-radius: 50%;
+    transform: translate(-50%, -50%); }
+  .progress span {
+    position: absolute;
+    top: -2.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--data-color);
+    left: var(--data-percentage);
+    transform: translateX(-50%); }
 
 .sidebar {
   display: flex;
@@ -322,18 +371,6 @@ html {
 
 .about-us {
   padding: 15rem 4rem 0 4rem; }
-  .about-us__title--main {
-    font-size: 1.3rem;
-    color: rgba(0, 0, 0, 0.4);
-    letter-spacing: 5px;
-    font-weight: 500;
-    text-transform: uppercase; }
-  .about-us__title--sub {
-    font-size: 3rem;
-    color: black;
-    letter-spacing: .5rem;
-    font-family: "Playfair Display", Georgia, serif;
-    text-transform: uppercase; }
   .about-us__paragraph {
     font-size: 1.7rem;
     font-weight: 400;
@@ -350,18 +387,6 @@ html {
 
 .what-i-do {
   padding: 15rem 4rem 0 4rem; }
-  .what-i-do__title--main {
-    font-size: 1.3rem;
-    color: rgba(0, 0, 0, 0.4);
-    letter-spacing: 5px;
-    font-weight: 500;
-    text-transform: uppercase; }
-  .what-i-do__title--sub {
-    font-size: 3rem;
-    color: black;
-    letter-spacing: .5rem;
-    font-family: "Playfair Display", Georgia, serif;
-    text-transform: uppercase; }
   .what-i-do__info {
     background-image: url("/img/cover_bg_1.jpg");
     background-size: cover;
@@ -384,3 +409,29 @@ html {
     color: white;
     letter-spacing: 3px;
     text-transform: uppercase; }
+
+.speciality {
+  padding: 15rem 4rem 0 4rem; }
+  .speciality__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    --gutter: 3rem;
+    --n: 2; }
+  .speciality__paragraph {
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 2rem; }
+  .speciality__item {
+    width: calc((100% - var(--gutter) * (var(--n) - 1)) / var(--n));
+    margin-bottom: calc(var(--gutter)); }
+  .speciality__item-name {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: .8rem; }
+  .speciality__item-progress {
+    width: 100%; }
+    .speciality__item-progress[value] {
+      height: 1rem; }
