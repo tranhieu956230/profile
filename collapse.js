@@ -8,8 +8,9 @@ $(document).ready(function () {
                 if (!element.is(current)) {
                     current.find("span").html("&plus;");
                     current.next().css({
-                        "max-height": "0",
-                        "margin-bottom": "0rem"
+                        "height": "0rem",
+                        "margin-bottom": "0rem",
+                        "border": "none"
                     });
 
                     current.removeClass("collapse__item-header--active");
@@ -24,23 +25,20 @@ $(document).ready(function () {
 
             element.find("span").html("&minus;");
             element.next().css({
-                "max-height": "15rem",
                 "border": "1px solid rgb(233, 234, 235)",
-                "margin-bottom": "0.8rem"
+                "margin-bottom": "0.8rem",
+                "height": element.next().prop('scrollHeight')
             })
 
         } else {
             element.find("span").html("&plus;");
             element.next().css({
-                "max-height": "0",
-                "margin-bottom": "0"
+                "margin-bottom": "0",
+                "border": "0",
+                "height": "0"
             });
 
-            setTimeout(function () {
-                element.next().css({
-                    "border": "none"
-                })
-            }, 400);
+
         }
     })
 })
