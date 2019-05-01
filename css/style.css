@@ -235,6 +235,46 @@ html {
     left: var(--data-percentage);
     transform: translateX(-50%); }
 
+.collapse__item-header {
+  position: relative;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.3rem 2rem;
+  letter-spacing: 2px;
+  background-color: #F2F3F7;
+  border: 1px solid #e9eaeb;
+  margin-bottom: .8rem;
+  cursor: pointer;
+  transition: background-color .8s;
+  user-select: none; }
+  .collapse__item-header--active {
+    color: white;
+    background-color: #2C98F0; }
+
+.collapse__icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  font-size: 1.8rem;
+  transform: translate(-50%, -50%);
+  color: currentColor; }
+
+.collapse__item-description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7);
+  max-height: 0;
+  transition: max-height 0.4s, margin-bottom 0.4s;
+  overflow: hidden;
+  box-sizing: border-box; }
+  .collapse__item-description p {
+    padding: 2rem 3rem 0rem 3rem; }
+    .collapse__item-description p:last-child {
+      margin-bottom: 2rem; }
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -435,3 +475,7 @@ html {
     width: 100%; }
     .speciality__item-progress[value] {
       height: 1rem; }
+
+.education {
+  padding: 15rem 4rem 5rem 4rem;
+  margin-bottom: 5rem; }

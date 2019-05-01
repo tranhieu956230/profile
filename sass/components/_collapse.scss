@@ -1,0 +1,59 @@
+.collapse {
+    &__item {}
+
+    &__item-header {
+        position: relative;
+        text-transform: uppercase;
+        color: $color-text-dark;
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding: 1.3rem 2rem;
+        letter-spacing: 2px;
+        background-color: #F2F3F7;
+        border: 1px solid rgb(233, 234, 235);
+        margin-bottom: .8rem;
+        cursor: pointer;
+        transition: background-color .8s;
+
+        &--active {
+            color: white;
+            background-color: #2C98F0;
+        }
+
+        user-select: none;
+
+
+
+    }
+
+    &__icon {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        font-size: 1.8rem;
+        transform: translate(-50%, -50%);
+        color: currentColor;
+    }
+
+    &__item-description {
+        font-size: 1.6rem;
+        font-weight: 400;
+        background-color: white;
+        color: $color-text-dark;
+        max-height: 0;
+        transition: max-height 0.4s,
+            margin-bottom 0.4s;
+        overflow: hidden;
+        box-sizing: border-box;
+
+        p {
+            padding: 2rem 3rem 0rem 3rem;
+
+            &:last-child {
+                margin-bottom: 2rem;
+            }
+
+        }
+
+    }
+}
