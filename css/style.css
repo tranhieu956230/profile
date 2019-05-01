@@ -141,13 +141,13 @@ html {
     margin-bottom: 1.5rem;
     font-size: 2.5rem; }
 
-.experiences {
+.expertise {
   display: flex;
   justify-content: space-between;
   --gutter: 3rem;
   --n: 3;
   flex-wrap: wrap; }
-  .experiences__item {
+  .expertise__item {
     width: calc((100% - var(--gutter) * (var(--n) - 1)) / var(--n));
     padding: 2rem 2.5rem;
     box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.1);
@@ -155,19 +155,19 @@ html {
     text-align: center;
     border-bottom: 2px solid currentColor;
     position: relative; }
-    .experiences__item--color-blue {
+    .expertise__item--color-blue {
       color: #2c98f0; }
-    .experiences__item--color-red {
+    .expertise__item--color-red {
       color: #ec5453; }
-    .experiences__item--color-yellow {
+    .expertise__item--color-yellow {
       color: #f9bf3f; }
-    .experiences__item--color-purple {
+    .expertise__item--color-purple {
       color: #a84cb8; }
-    .experiences__item--color-green {
+    .expertise__item--color-green {
       color: #2FA499; }
-    .experiences__item--color-dark-blue {
+    .expertise__item--color-dark-blue {
       color: #4054B2; }
-    .experiences__item::after {
+    .expertise__item::after {
       content: "";
       width: 9rem;
       height: 9rem;
@@ -178,19 +178,19 @@ html {
       left: 50%;
       transform: translate(-50%, -50%);
       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
-  .experiences__item-header {
+  .expertise__item-header {
     font-size: 1.6rem;
     font-weight: 500;
     color: black;
     margin-bottom: 2.5rem;
     text-transform: uppercase;
     margin-top: 4rem; }
-  .experiences__item-description {
+  .expertise__item-description {
     font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 3rem;
     line-height: 1.8; }
-  .experiences__item-icon {
+  .expertise__item-icon {
     font-size: 2.5rem;
     position: absolute;
     z-index: 1;
